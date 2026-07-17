@@ -344,8 +344,15 @@ function makeSmartImg(src, alt, ratio){
   // si falla (placeholder / archivo no existe aún) muestra
   // un bloque con el ícono y el nombre de archivo esperado.
   const wrap = document.createElement('div');
-  wrap.style.position = 'relative';
-  if(ratio) wrap.style.aspectRatio = ratio;
+  if(ratio){
+    // El contenedor padre (.event-cover) ya tiene su proporción
+    // resuelta con la técnica de padding-top (compatible con
+    // cualquier navegador). Aquí solo llenamos ese espacio.
+    wrap.style.position = 'absolute';
+    wrap.style.inset = '0';
+  } else {
+    wrap.style.position = 'relative';
+  }
 
   const img = document.createElement('img');
   img.src = src;
