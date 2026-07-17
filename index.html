@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leonardo Garcia · Fotografía de Motorsport</title>
+<meta name="description" content="Portafolio de fotografía de motorsport de Leonardo García.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <a href="#inicio" class="nav-logo">LEO<span>·</span>GARCIA</a>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#galerias">Galerías</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="#galerias" class="nav-cta">Ver galerías</a>
+    <button class="nav-burger" id="burger" aria-label="Abrir menú">
+      <span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#galerias">Galerías</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="inicio">
+    <div class="hero-bg" data-parallax="0.15"></div>
+    <div class="hero-grid" data-parallax="0.3"></div>
+    <div class="hero-stripe" data-parallax="0.5"></div>
+
+    <div class="hero-inner">
+      <div class="hero-kicker"><span class="dot"></span> Fotografía deportiva · Motorsport</div>
+      <h1 class="hero-name">LEONARDO<br><span class="accent">GARCIA</span></h1>
+      <div class="hero-line"></div>
+      <p class="hero-sub">Fotógrafo de <b>motorsport</b> basado en Ciudad de México. Capturo velocidad, tensión y el instante exacto de la pista. Desde la clasificación a la bandera a cuadros.</p>
+      <div class="hero-actions">
+        <a href="#galerias" class="btn btn-primary">
+          Ver galerías
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#sobre-mi" class="btn btn-ghost">Sobre mí</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="wire"></div>
+      Scroll
+    </div>
+  </header>
+
+  <!-- ============ SOBRE MÍ ============ -->
+  <section class="about" id="sobre-mi">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-photo reveal">
+          <!-- Reemplaza este bloque por: <img src="img/perfil.jpg" alt="Leonardo García"> -->
+          <div class="ph-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/><path d="M8 5l1.5-2h5L16 5"/></svg>
+            Tu foto aquí<br>(retrato / paddock)
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <span class="eyebrow">Sobre mí</span>
+          <h2 class="sec-title" style="margin-top:14px; margin-bottom:24px;">Detrás del lente, en la pista</h2>
+          <p>Soy fotógrafo con <b>más de 5 años de experiencia</b>, especializado en <b>fotografía de motorsport</b>, además de cobertura editorial y de eventos. Formado en la Escuela George Eastman, busco siempre el ángulo que transmite velocidad real.</p>
+          <p>Mi trabajo ha sido publicado en medios editoriales y reconocido en concursos fotográficos nacionales. [Agrega aquí una línea sobre tu trayectoria específica en motorsport: series que has cubierto, autódromos, credenciales previas, etc.]</p>
+
+          <div class="stat-row">
+            <div class="stat">
+              <div class="stat-num">5+</div>
+              <div class="stat-label">Años de experiencia</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">10</div>
+              <div class="stat-label">Eventos cubiertos</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">3</div>
+              <div class="stat-label">Series / categorías</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERÍAS ============ -->
+  <section class="galleries" id="galerias">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Portafolio</span>
+        <h2 class="sec-title">Galerías</h2>
+      </div>
+
+      <div class="gallery-grid reveal-stagger" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="contact" id="contacto">
+    <div class="contact-glow"></div>
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow" style="justify-content:center;">Contacto</span>
+        <h2 class="sec-title">Hablemos de tu evento</h2>
+      </div>
+      <p class="contact-sub reveal">Disponible para cobertura de motorsport, prensa y acreditaciones. Escríbeme y te respondo en breve.</p>
+
+      <div class="contact-links reveal">
+        <a href="mailto:tu@correo.com" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          tu@correo.com
+        </a>
+        <a href="https://instagram.com/tu_usuario" target="_blank" rel="noopener" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          @tu_usuario
+        </a>
+        <a href="tel:+521234567890" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
+          +52 1 234 567 890
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    LEONARDO GARCIA — FOTOGRAFÍA DE MOTORSPORT · CDMX · © <span id="year"></span>
+  </footer>
+
+  <!-- ============ GALLERY DETAIL (SPA) ============ -->
+  <div class="detail-view" id="detailView">
+    <div class="detail-top">
+      <button class="back-btn" id="backBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Volver a galerías
+      </button>
+      <span class="detail-tag" id="detailTagTop"></span>
+    </div>
+    <div class="detail-head">
+      <span class="detail-tag" id="detailTag"></span>
+      <h2 class="detail-title" id="detailTitle"></h2>
+      <div class="detail-meta">
+        <span id="detailDate"></span>
+        <span id="detailLoc"></span>
+        <span id="detailCount"></span>
+      </div>
+    </div>
+    <div class="masonry" id="masonryGrid"></div>
+  </div>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-btn lb-close" id="lbClose" aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <button class="lb-btn lb-prev" id="lbPrev" aria-label="Anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <img id="lbImg" src="" alt="">
+    <button class="lb-btn lb-next" id="lbNext" aria-label="Siguiente">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
